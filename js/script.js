@@ -117,7 +117,7 @@ function buildAndShowHomeHTML (categories) {
       // it into the home html snippet.
       // 
       // var homeHtmlToInsertIntoMainPage = ....
-       var homeHtmlToInsertIntoMainPage = $ajaxUtils.sendGetRequest(homeHtmlUrl, insertProperty(homeHtmlUrl, "randomCategoryShortName", chosenCategoryShortName, false);
+       var homeHtmlToInsertIntoMainPage = $ajaxUtils.sendGetRequest(homeHtmlUrl, function(responseRequest){insertProperty(responseRequest, "randomCategoryShortName"}, chosenCategoryShortName, false);
       
 
       // TODO: STEP 4: Insert the the produced HTML in STEP 3 into the main page
